@@ -19,20 +19,6 @@ Both methods price a **European Call option** and return the discounted expected
 
 ---
 
-## Model Parameters
-
-- Initial stock price: `S0`
-- Strike price: `K`
-- Time to expiry (years): `TTE`
-- Risk-free interest rate: `r`
-- Number of time steps: `N`
-- Up factor: `u`
-- Down factor: `d = 1/u` (ensures recombining tree)
-- Option type: European Call
-- Risk-neutral probability: q = (e^(rt) - d)/(u - d)
-
----
-
 ## Implementations
 
 ### `binomial_tree_slow`
